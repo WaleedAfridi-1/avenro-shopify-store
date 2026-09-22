@@ -1,4 +1,5 @@
 import Hero from "@/components/home/Hero/Hero";
+import Products from "@/components/home/products/Products";
 import ShopByCategory from "@/components/home/ShopByCategory/ShopByCategory";
 import Image from "next/image";
 
@@ -8,6 +9,8 @@ export default function Home() {
       <Hero/>
     
       <ShopByCategory/>
+
+      <Products/>
     </main>
   );
 }

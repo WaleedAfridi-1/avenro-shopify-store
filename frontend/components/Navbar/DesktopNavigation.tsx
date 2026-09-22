@@ -69,7 +69,7 @@ const DesktopNavigation = ({isScrolled, searchIsOpen} : {isScrolled : any; searc
                             }}
                             className="text-left"
                           >
-                            <p className="mb-4 font-mono border-b border-border-focus w-fit pb-4 text-sm font-semibold uppercase tracking-[0.2em] text-text-primary">
+                            <p className="mb-4 font-mono border-b border-border-focus w-fit pb-4 text-sm font-normal uppercase tracking-[0.2em] text-text-primary">
                               {section.title}
                             </p>
 
@@ -78,7 +78,7 @@ const DesktopNavigation = ({isScrolled, searchIsOpen} : {isScrolled : any; searc
                                 <Link
                                   key={catIdx}
                                   href="#"
-                                  className="group/link flex items-center font-mono text-sm text-text-muted transition-colors duration-200 hover:text-foreground"
+                                  className="w-fit group/link flex items-center  text-sm text-text-muted transition-colors duration-200 hover:text-foreground"
                                 >
                                   <span className="transition-transform duration-200 group-hover/link:translate-x-1">
                                     {cat}

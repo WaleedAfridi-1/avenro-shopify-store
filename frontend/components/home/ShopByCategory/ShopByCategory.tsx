@@ -1,14 +1,14 @@
 
 import CategoryCard from "./CategoryCard";
 import { cardData, cardDataProps } from "./CategoryCardData";
-import CategoryHeader from "./CategoryHeader";
+import SectionsHeader from "@/components/SectionsHeader";
 
 
 const ShopByCategory = () => {
   return (
-    <section className="mt-12 bg-accent-soft/80 w-full ">
+    <section className="mt-12 bg-background w-full ">
       {/* Header  */}
-      <CategoryHeader tag="SHOP BY CATEGORY" title="Explore The AVENRO Essentials."/>
+      <SectionsHeader tag="SHOP BY CATEGORY" title="Explore The AVENRO Essentials."/>
 
 
       {/* card container   */}

@@ -1,3 +1,4 @@
+import BestSellers from "@/components/home/BestSellers/BestSellers";
 import Hero from "@/components/home/Hero/Hero";
 import Products from "@/components/home/products/Products";
 import ShopByCategory from "@/components/home/ShopByCategory/ShopByCategory";
@@ -11,6 +12,8 @@ export default function Home() {
       <ShopByCategory/>
 
       <Products/>
+
+      <BestSellers/>
     </main>
   );
 }

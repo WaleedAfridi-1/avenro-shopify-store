@@ -69,7 +69,7 @@ const DesktopNavigation = ({isScrolled, searchIsOpen} : {isScrolled : any; searc
                             }}
                             className="text-left"
                           >
-                            <p className="mb-4 font-mono border-b border-border-focus w-fit pb-4 text-sm font-normal uppercase tracking-[0.2em] text-text-primary">
+                            <p className="mb-4 font-mono border-b border-border/5 w-fit pb-4 text-sm font-normal uppercase tracking-[0.2em] text-text-primary">
                               {section.title}
                             </p>
 

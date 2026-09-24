@@ -43,17 +43,19 @@ const Card = ({ title, images, sizes }: CardProps) => {
           type="button"
           aria-label="Add Black T-Shirt to wishlist"
           className="
+            opacity-0 translate-x-4
+            group-hover:translate-0 group-hover:opacity-100
             absolute right-2 top-2 z-20
             flex h-8 w-8 sm:h-9 sm:w-9
             items-center justify-center
             rounded-full
-            bg-surface/90
+            cursor-pointer
             text-foreground
             shadow-sm
-            backdrop-blur-sm
-            transition-all duration-300
-            hover:bg-surface
-            hover:text-red-500
+            hover:backdrop-blur-sm
+            transition-all duration-500
+            hover:bg-surface/40
+            hover:text-red-600
             hover:shadow-md
             active:scale-95
           "
@@ -108,24 +110,24 @@ const Card = ({ title, images, sizes }: CardProps) => {
           className="
             absolute bottom-3 left-3 right-3 z-20
             hidden md:flex
-            h-10
+            h-10 cursor-pointer
             items-center justify-center
             bg-surface/95
             text-[10px]
-            font-medium
+            font-bold
             uppercase
             tracking-[0.18em]
             text-foreground
             opacity-0
             translate-y-2
-            transition-all duration-500
+            transition-all duration-300
             group-hover:translate-y-0
             group-hover:opacity-100
             hover:bg-foreground
             hover:text-text-inverse
           "
         >
-          ADD
+          Quick Add
         </button>
       </div>
 

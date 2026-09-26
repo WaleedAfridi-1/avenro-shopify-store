@@ -1,20 +1,20 @@
 import React from "react";
 import SectionsHeader from "@/components/SectionsHeader";
 import Card from "@/components/Card";
+import ViewAllButton from "@/components/ViewAllButton";
 
 const BestSellers = () => {
   return (
-    <section className="w-full  mt-10 py-6 px-2 lg:px-4">
+    <section className="mt-10 w-full px-4 py-6 sm:px-6 lg:px-8">
       <SectionsHeader
         tag="BEST SELLERS"
         title="The pieces everyone is wearing."
       />
 
-      {/* cards container  */}
-      <div className=" grid grid-cols-2 mt-6 md:grid-cols-3 lg:grid-cols-4 space-y-6 gap-x-2 md:gap-x-4 lg:gap-6">
-
+      {/* Products */}
+      <div className="mt-6 grid grid-cols-2 gap-x-2 gap-y-8 md:grid-cols-3 md:gap-x-4 md:gap-y-10 lg:grid-cols-4 lg:gap-6">
         <Card
-          title="premium girls T-shirt"
+          title="Premium Girls T-Shirt"
           images={{
             primary: "/bestSellers/girl-t-shirt-back.png",
             secondary: "/bestSellers/girl-t-shirt.png",
@@ -22,7 +22,7 @@ const BestSellers = () => {
         />
 
         <Card
-          title="premium girls T-shirt"
+          title="Premium Girls T-Shirt"
           images={{
             primary: "/bestSellers/skyblue-t-shirt-front.png",
             secondary: "/bestSellers/skyblue-t-shirt.png",
@@ -30,15 +30,7 @@ const BestSellers = () => {
         />
 
         <Card
-          title="Cap"
-          images={{
-            primary: "/bestSellers/cap.png",
-            secondary: "/bestSellers/cap.png",
-          }}
-        />
-
-        <Card
-          title="Baggy jeans"
+          title="Baggy Jeans"
           images={{
             primary: "/bestSellers/jean.png",
             secondary: "/bestSellers/jean-back.png",
@@ -52,14 +44,9 @@ const BestSellers = () => {
             secondary: "/bestSellers/hoddie-back.png",
           }}
         />
-        <Card
-          title="premium girls T-shirt"
-          images={{
-            primary: "/bestSellers/white-t-shirt.png",
-            secondary: "/bestSellers/white-t-shirt-back.png",
-          }}
-        />
       </div>
+
+      <ViewAllButton/>
     </section>
   );
 };

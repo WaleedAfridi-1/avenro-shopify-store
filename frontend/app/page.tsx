@@ -1,6 +1,7 @@
 import BestSellers from "@/components/home/BestSellers/BestSellers";
 import Essentials from "@/components/home/Essentials/Essentials";
 import Hero from "@/components/home/Hero/Hero";
+import Newsletter from "@/components/home/newsLetter/NewsLetter";
 import Products from "@/components/home/products/Products";
 import ShopByCategory from "@/components/home/ShopByCategory/ShopByCategory";
 import Testimonials from "@/components/home/testimonials/Testimonials";
@@ -23,6 +24,8 @@ export default function Home() {
       <WhyUS/>
 
       <Testimonials/>
+
+      <Newsletter/>
     </main>
   );
 }

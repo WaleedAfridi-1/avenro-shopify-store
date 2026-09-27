@@ -51,6 +51,15 @@ const chunk = <T,>(items: T[], size: number): T[][] => {
   return result;
 };
 
+const getInitials = (name: string) =>
+  name
+    .trim()
+    .split(/\s+/)
+    .map((part) => part[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase();
+    
 const Testimonials = () => {
   const cardsPerView = useCardsPerView();
   const pages = useMemo(() => chunk(testimonials, cardsPerView), [cardsPerView]);

@@ -9,7 +9,6 @@ import { Banner } from './hero-data';
 
 interface HeroSlideProps {
   banner: Banner;
-  /** True while the overlay is fading away — used to re-trigger the text entrance timing. */
   isRevealing: boolean;
 }
 
@@ -18,7 +17,7 @@ const EASE = [0.16, 1, 0.3, 1] as const;
 const HeroSlide: React.FC<HeroSlideProps> = ({ banner, isRevealing }) => {
   return (
     <div className="absolute inset-0 h-full w-full">
-      {/* Background image — slow continuous zoom (Ken Burns) while it's on screen */}
+      {/* Background image — slow continuous zoom */}
       <motion.div
         key={banner.id}
         className="absolute inset-0 h-full w-full"
@@ -26,15 +25,21 @@ const HeroSlide: React.FC<HeroSlideProps> = ({ banner, isRevealing }) => {
         animate={{ scale: 1.08 }}
         transition={{ duration: 8, ease: 'linear' }}
       >
-        <Image
-          src={banner.image}
-          alt={banner.title}
-          fill
-          priority
-          sizes="100vw"
-          draggable={false}
-          className="object-cover object-[60%_center]"
-        />
+        <picture>
+          <source
+          media='(max-width: 767px)'
+          srcSet={banner.mobileImage || banner.image}
+          />
+          <Image
+            src={banner.image}
+            alt={banner.title}
+            fill
+            priority
+            sizes="100vw"
+            draggable={false}
+            className="object-cover object-[60%_center]"
+          />
+        </picture>
       </motion.div>
 
       {/* Gradient for text legibility */}

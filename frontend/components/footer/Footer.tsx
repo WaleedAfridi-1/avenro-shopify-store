@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="mt-10 w-full border-t border-border/15 bg-foreground text-text-inverse">
       {/* Main Footer */}
-      <div className="mx-auto w-full max-w-[1440px] px-5 py-12 sm:px-8 sm:py-14 lg:px-12 lg:py-16">
+      <div className="mx-auto w-full max-w-360 px-5 py-12 sm:px-8 sm:py-14 lg:px-12 lg:py-16">
         {/* Brand */}
         <div className="flex flex-col items-start pb-10 sm:pb-12">
           <Link

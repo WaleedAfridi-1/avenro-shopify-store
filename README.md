@@ -4,6 +4,12 @@
 
 > 🚧 **Project Status:** In Development — The store is currently being built and will be completed soon.
 
+## 🌐 Live Demo
+
+The current frontend deployment is available here:
+
+**[🚀 View Nexora Live](https://avenro-nine.vercel.app/)**
+
 ## About
 
 AVENRO is being developed as a modern **Shopify-powered fashion storefront** for a direct-to-consumer (DTC) brand.

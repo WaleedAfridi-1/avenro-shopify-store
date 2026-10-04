@@ -1,8 +1,10 @@
 const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require("morgan");
+const cookieParser = require("cookie-parser");
 const express = require("express");
 const authRouter = require('../src/routes/auth.routes');
+
 const app = express();
 
 
@@ -17,6 +19,7 @@ app.use(
 );
 // Body parser
 app.use(express.json());
+app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 // Logger
 app.use(morgan("dev"));

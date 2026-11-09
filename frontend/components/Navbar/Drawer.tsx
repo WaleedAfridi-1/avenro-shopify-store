@@ -63,7 +63,7 @@ export default function MobileDrawer() {
             <div className="space-y-3 text-sm">
 
               <Link
-                href="/account"
+                href="/login"
                 className="flex items-center  gap-2 text-text-secondary transition hover:text-text-primary"
               >
                <CiUser className="h-4 w-4"/> <p className="uppercase self-baseline text-xs tracking-widest ">My Account</p>

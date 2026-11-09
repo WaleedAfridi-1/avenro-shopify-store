@@ -31,15 +31,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body lang="en"  className="relative min-h-full flex flex-col ">
 
         <ReduxProvider>
-          
-          <Drawer/>
-          <NavBar/>
-          <SearchBar/>
-          
           {children}
-
-          <Footer/>
-
         </ReduxProvider>
         
         </body>

@@ -56,7 +56,7 @@ return (
 
       {/* Icons */}
       <div className={`${ isScrolled ? `text-primary-active`:`${searchIsOpen ? "text-primary" : "text-text-inverse"}`} px-4 text-primary group-hover:text-primary flex items-center gap-6`}>
-        <Link href={"#"} className='hidden md:block'>
+        <Link href={"/login"} className='hidden md:block'>
           <CiUser className='w-6 h-6 active:scale-95'/>
         </Link>
         <button onClick={() => dispatch(setSearchOpen(true))}>

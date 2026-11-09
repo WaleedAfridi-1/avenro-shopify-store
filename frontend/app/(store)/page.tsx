@@ -6,7 +6,7 @@ import Products from "@/components/home/products/Products";
 import ShopByCategory from "@/components/home/ShopByCategory/ShopByCategory";
 import Testimonials from "@/components/home/testimonials/Testimonials";
 import WhyUS from "@/components/home/whyUs/WhyUS";
-import Image from "next/image";
+
 
 export default function Home() {
   return (

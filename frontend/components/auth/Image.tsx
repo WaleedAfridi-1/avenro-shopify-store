@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const LoginImage = () => {
+const AuthImage = () => {
   return (
     <div className="relative hidden lg:block lg:w-5/12 xl:w-1/3 min-h-screen self-stretch">
       <Image 
@@ -17,4 +17,4 @@ const LoginImage = () => {
   );
 };
 
-export default LoginImage;
+export default AuthImage;

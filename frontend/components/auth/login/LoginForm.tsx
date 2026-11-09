@@ -1,11 +1,11 @@
 "use client"
 import Link from "next/link";
 import React from "react";
-import GoogleButton from "./GoogleButton";
+import GoogleButton from "../GoogleButton";
 
 const LoginForm = () => {
   return (
-    <section className="w-full bg-surface border min-h-screen lg:w-7/12 xl:w-2/3 py-8 lg:px-12 md:px-8 px-6 flex flex-col justify-center items-center">
+    <section className="w-full bg-surface border min-h-screen  lg:w-7/12 xl:w-2/3 py-8 lg:px-12 md:px-8 px-6 flex flex-col justify-center items-center">
       {/* Form Container */}
       <div className="w-full max-w-md flex flex-col items-center gap-6 my-auto">
         
@@ -24,7 +24,7 @@ const LoginForm = () => {
               Login
             </button>
             <Link
-              href="/sign-up"
+              href="/signup"
               className="flex-1 flex items-center justify-center rounded-md h-full py-1 text-text-muted hover:text-text-primary cursor-pointer transition-all duration-300"
             >
               Sign Up
@@ -112,7 +112,7 @@ const LoginForm = () => {
         {/* Footer Redirect */}
         <div className="flex gap-1.5 justify-center items-center text-sm pt-1">
           <span className="text-text-muted">Don't have an account?</span>
-          <Link href="/sign-up" className="text-text-primary font-semibold hover:underline">
+          <Link href="/signup" className="text-text-primary font-semibold hover:underline">
             Sign up
           </Link>
         </div>

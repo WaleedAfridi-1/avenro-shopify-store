@@ -1,5 +1,5 @@
 import LoginForm from "@/components/auth/login/LoginForm";
-import LoginImage from "@/components/auth/login/LoginImage";
+import LoginImage from "@/components/auth/Image";
 import React from "react";
 
 

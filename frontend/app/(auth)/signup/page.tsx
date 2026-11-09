@@ -1,10 +1,13 @@
+import AuthImage from '@/components/auth/Image'
+import SignUpForm from '@/components/auth/signUp/SignUpForm'
 import React from 'react'
 
 const signUpPage = () => {
   return (
-    <div>
-      <h1>SignUp</h1>
-    </div>
+    <main className="w-full min-h-screen bg-background flex flex-col lg:flex-row items-stretch overflow-x-hidden">
+      <AuthImage/>
+      <SignUpForm/>
+    </main>
   )
 }
 
